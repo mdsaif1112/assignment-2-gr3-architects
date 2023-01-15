@@ -12,7 +12,7 @@
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
-    padding: 12px 22px;
+    padding: 10px 20px;
     background-color: #FF900E;
     text-decoration: none;
     text-transform: capitalize;
@@ -22,9 +22,32 @@
     transition: all 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
     color: #FF900E;
     background: #fff;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+    text-transform: capitalize;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
 }
 
 /* Header Styles */
@@ -116,18 +139,245 @@
 }
 
 .banner .banner-container .banner-content .banner-desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #727272;
     margin-bottom: 20px;
 }
 
-.banner .banner-container .banner-img{
+.banner .banner-container .banner-img {
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
-.banner .banner-container .banner-img img{
+.banner .banner-container .banner-img img {
     width: 100%;
+}
+
+/* Team Styles */
+
+.team-section {
+    padding: 0 20px;
+    margin: 100px 0;
+}
+
+.team-section .team-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-section .team-container>* {
+    width: 50%;
+}
+
+
+.team-section .team-container .team-img .images-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.team-section .team-container .team-content {
+    padding: 0 0 0 60px;
+}
+
+.team-section .team-container .team-content .section-title {
+    margin-bottom: 20px;
+}
+
+.team-section .team-container .team-content .section-title .off-color {
+    font-weight: 500;
+    color: #727272;
+}
+
+.team-section .team-container .team-content .section-title .highlighted {
+    color: #FF900E;
+}
+
+.team-section .team-container .team-content .team-desc {
+    margin-bottom: 20px;
+}
+
+/* Services Styles */
+
+.services-section {
+    padding: 0 20px;
+    margin: 150px 0;
+}
+
+.services-section .services-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.services-section .services-container .services-content {
+    width: 45%;
+    padding-right: 40px;
+}
+
+.services-section .services-container .services-img {
+    width: 55%;
+}
+
+.services-section .services-container .services-content .section-title {
+    padding-left: 15px;
+    border-left: 5px solid #FF900E;
+    margin-bottom: 30px;
+}
+
+.services-section .services-container .services-content .services-desc {
+    margin-bottom: 20px;
+}
+
+.services-section .services-container .services-content .services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.services-section .services-container .services-content .services .single-service {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 35px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+}
+
+.services-section .services-container .services-content .services .single-service:hover {
+    border: 1px solid rgba(61, 42, 42, 0.1);
+    box-shadow: none;
+}
+
+.services-section .services-container .services-content .services .single-service .service-title {
+    margin-bottom: 10px;
+}
+
+.services-section .services-container .services-img img {
+    width: 708px;
+    margin-left: 80px;
+}
+
+.services-section .services-container .services-img .btn {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.services-section .services-container .services-img .btn span {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Counter Styles */
+
+.counter-section {
+    padding: 0 20px;
+    margin: 150px 0;
+}
+
+.counter-section .counter-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.counter-section .counter-container .counter-title {
+    margin-bottom: 20px;
+}
+
+.counter-section .counter-container .counter-desc {
+    padding-right: 850px;
+    margin-bottom: 50px;
+}
+
+.counter-section .counter-container .counter-box-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.counter-section .counter-container .counter-box-container .counter-box {
+    padding: 30px;
+    border-radius: 5px;
+    border: 2px solid #FF900E;
+    text-align: center;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.counter-section .counter-container .counter-box-container .counter-box:hover {
+    transform: scale(1.1);
+}
+
+.counter-section .counter-container .counter-box-container .counter-box img {
+    width: 46px;
+    margin-bottom: 10px;
+}
+
+.counter-section .counter-container .counter-box-container .counter-box span {
+    display: block;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    color: #424242;
+    margin-bottom: 10px;
+}
+
+.counter-section .counter-container .counter-box-container .counter-box .counter-box-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272;
+    text-transform: capitalize;
+}
+
+/* Sponsor Styles */
+
+.sponsors-section {
+    padding: 0 20px;
+    margin: 150px 0;
+}
+
+.sponsors-section .sponsors-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sponsors-section .sponsors-container .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sponsors-section .sponsors-container .sponsors-desc {
+    text-align: center;
+    padding: 0 400px;
+}
+
+.sponsors-section .sponsors-container .sponsors {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.sponsors-section .sponsors-container .sponsors img {
+    width: 165px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.sponsors-section .sponsors-container .sponsors img:hover {
+    filter: grayscale(0);
 }
