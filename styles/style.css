@@ -1,0 +1,133 @@
+/* Common Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 12px 22px;
+    background-color: #FF900E;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid #FF900E;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    color: #FF900E;
+    background: #fff;
+}
+
+/* Header Styles */
+
+.header {
+    padding: 15px 20px;
+    margin-bottom: -83px;
+}
+
+.header .header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-container .header-logo {
+    width: 30%;
+}
+
+.header .header-container .header-logo .site-title {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.header .header-container .header-nav {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .header-container .header-nav .header-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.header .header-container .header-nav .header-ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #424242;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.header .header-container .header-nav .header-ul li:hover a {
+    color: #FF900E;
+}
+
+/* Banner Styles */
+
+.banner {
+    padding: 150px 20px 0;
+    background-color: #FFF4E7;
+    min-height: 100vh;
+}
+
+.banner .banner-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-container .banner-content {
+    text-align: center;
+    width: 100%;
+    padding: 0 300px 50px;
+}
+
+.banner .banner-container .banner-content .banner-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #131313;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.banner .banner-container .banner-content .banner-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 20px;
+}
+
+.banner .banner-container .banner-img{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.banner .banner-container .banner-img img{
+    width: 100%;
+}
