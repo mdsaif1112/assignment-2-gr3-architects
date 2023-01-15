@@ -341,6 +341,84 @@ p {
     text-transform: capitalize;
 }
 
+/* Testimonial Styles */
+
+.testimonial-section {
+    padding: 0 20px;
+    margin: 150px 0;
+}
+
+.testimonial-section .testimonial-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.testimonial-section .testimonial-container .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-section .testimonial-container .testimonial-desc {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 400px;
+}
+
+.testimonial-section .testimonial-container .testimonial-box-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-section .testimonial-container .testimonial-box-container>*{
+    flex: 1;
+}
+
+.testimonial-section .testimonial-container .testimonial-box-container .testimonial-box{
+    padding: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
+}
+
+.testimonial-section .testimonial-container .testimonial-box-container .testimonial-box:hover{
+    box-shadow: none;
+    border-color: rgba(99, 99, 99, 0.2);
+}
+
+.testimonial-section .testimonial-container .testimonial-box-container .testimonial-box .testimonial-content{
+    margin-bottom: 30px;
+}
+
+.testimonial-section .testimonial-container .testimonial-box-container .testimonial-box .info{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-section .testimonial-container .testimonial-box-container .testimonial-box .info img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.testimonial-section .testimonial-container .testimonial-box-container .testimonial-box .info .client-details h4{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.testimonial-section .testimonial-container .testimonial-box-container .testimonial-box .info .client-details span{
+    text-transform: capitalize;
+    color: #FF900E;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 /* Sponsor Styles */
 
 .sponsors-section {
@@ -404,7 +482,7 @@ p {
     text-transform: capitalize;
 }
 
-.footer .footer-container p a{
+.footer .footer-container p a {
     text-decoration: none;
     color: #424242;
     text-transform: uppercase;
@@ -416,155 +494,182 @@ p {
 @media screen and (max-width: 576px) {
 
     /* Common */
-    .section-title{
+    .section-title {
         font-size: 40px;
     }
 
     /* Header syles */
-    .header{
+    .header {
         margin-bottom: -129px;
     }
-    .header .header-container{
+
+    .header .header-container {
         flex-direction: column;
     }
 
-    .header .header-container .header-logo{
+    .header .header-container .header-logo {
         width: 100%;
         text-align: center;
         padding-bottom: 20px;
     }
 
-    .header .header-container .header-nav{
+    .header .header-container .header-nav {
         width: 100%;
     }
 
     /* Banner Styles */
 
-    .banner .banner-container .banner-content{
+    .banner .banner-container .banner-content {
         padding: 20px 0 50px 0;
     }
 
-    .banner .banner-container .banner-content .banner-title{
+    .banner .banner-container .banner-content .banner-title {
         font-size: 50px;
         line-height: 62px;
     }
 
-    .banner .banner-container .banner-img{
+    .banner .banner-container .banner-img {
         padding-bottom: 50px;
     }
 
     /* Team Styles */
 
-    .team-section{
+    .team-section {
         margin: 50px 0;
     }
 
-    .team-section .team-container{
+    .team-section .team-container {
         flex-direction: column;
         gap: 50px;
     }
 
-    .team-section .team-container>*{
+    .team-section .team-container>* {
         width: 100%;
     }
 
-    .team-section .team-container .team-img .images-container{
+    .team-section .team-container .team-img .images-container {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
     }
-    .team-section .team-container .team-img .images-container img{
+
+    .team-section .team-container .team-img .images-container img {
         width: 100%;
     }
 
-    .team-section .team-container .team-content{
+    .team-section .team-container .team-content {
         padding: 0;
     }
 
     /* Services Styles */
 
-    .services-section{
+    .services-section {
         margin: 80px 0;
     }
 
-    .services-section .services-container{
+    .services-section .services-container {
         flex-direction: column;
         gap: 50px;
     }
+
     .services-section .services-container .services-content {
         width: 100%;
         padding: 0;
     }
-    
+
     .services-section .services-container .services-img {
         width: 100%;
         padding: 0;
     }
 
-    .services-section .services-container .services-content .services{
+    .services-section .services-container .services-content .services {
         margin-top: 50px;
     }
 
-    .services-section .services-container .services-content .services .single-service{
+    .services-section .services-container .services-content .services .single-service {
         padding: 20px;
     }
 
-    .services-section .services-container .services-img img{
+    .services-section .services-container .services-img img {
         width: 100%;
         margin: 0;
     }
 
-    .services-section .services-container .services-img .btn{
-        margin: 50px 0 0 0 ;
+    .services-section .services-container .services-img .btn {
+        margin: 50px 0 0 0;
         width: 100%;
     }
 
     /* Counter Styles */
 
-    .counter-section{
+    .counter-section {
         margin: 80px 0;
     }
 
-    .counter-section .counter-container .section-title{
+    .counter-section .counter-container .section-title {
         text-align: center;
         margin-bottom: 10px;
     }
 
-    .counter-section .counter-container .counter-desc{
+    .counter-section .counter-container .counter-desc {
         padding: 0;
         text-align: center;
     }
 
-    .counter-section .counter-container .counter-box-container{
+    .counter-section .counter-container .counter-box-container {
         flex-direction: column;
         width: 100%;
     }
 
-    .counter-section .counter-container .counter-box-container .counter-box{
+    .counter-section .counter-container .counter-box-container .counter-box {
         width: 100%;
+    }
+
+    /* Testimonial Styles */
+
+    .testimonial-section {
+        margin: 80px 0;
+    }
+    
+    .testimonial-section .testimonial-container .section-title {
+        margin-bottom: 20px;
+    }
+    
+    .testimonial-section .testimonial-container .testimonial-desc {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    
+    .testimonial-section .testimonial-container .testimonial-box-container{
+        flex-direction: column;
+    }
+    
+    .testimonial-section .testimonial-container .testimonial-box-container .testimonial-box{
+        padding: 20px;
     }
 
     /* Sponsor Styles */
 
-    .sponsors-section{
+    .sponsors-section {
         margin: 80px 0 50px;
     }
 
-    .sponsors-section .sponsors-container .section-title{
+    .sponsors-section .sponsors-container .section-title {
         margin-bottom: 10px;
         text-align: center;
     }
 
-    .sponsors-section .sponsors-container .sponsors-desc{
+    .sponsors-section .sponsors-container .sponsors-desc {
         padding: 0;
     }
-    .sponsors-section .sponsors-container .sponsors{
+
+    .sponsors-section .sponsors-container .sponsors {
         flex-direction: column;
         gap: 70px;
     }
 
     /* Footer Styles */
 
-    .footer .footer-container p{
+    .footer .footer-container p {
         line-height: 30px;
     }
 }
